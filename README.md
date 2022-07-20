@@ -2,13 +2,13 @@
 
 #### INFO 2103  DATABASE PROGRAMMING (SECTION 3) 
 
-### GROUP PROJECT  :  TUITION SYSTEM
+#### GROUP PROJECT  :  TUITION SYSTEM
 
-### JANUARY 2021
+#### JANUARY 2021
 
-### LECTURER'S NAME: Dr. Zainatul Shima binti Abdullah
+#### LECTURER'S NAME: Dr. Zainatul Shima binti Abdullah
 
-### PREPARED BY    :
+#### PREPARED BY    :
 
 ###		Nur Syifa' Aina bt Zahaimi                 1817794
 ###		Nurul Fadhillah bt Ismail                  1811722
