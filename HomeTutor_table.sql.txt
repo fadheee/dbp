@@ -1,0 +1,43 @@
+DROP TABLE TUTOR cascade constraints;
+DROP TABLE FEES cascade constraints;
+DROP TABLE STUDENT cascade constraints;
+DROP TABLE SUBJECT cascade constraints;
+
+CREATE TABLE SUBJECT
+ (SUBCODE                                           NUMBER(3),
+ SUB_NAME                                           VARCHAR2(15),
+ SUB_DAY                                            VARCHAR2(10),
+ SUB_TIME                                           VARCHAR2(6),
+ SECTION					    NUMBER(2),
+	CONSTRAINT SUBJECT_SUBCODE_SECTION_CK PRIMARY KEY (SUBCODE, SECTION));
+
+CREATE TABLE TUTOR
+ (TR_ID                                            NUMBER(3),
+ TR_FN                                             VARCHAR2(15),
+ TR_LN                                             VARCHAR2(15),
+ TR_PN	                                           NUMBER(10),
+ SALARY                                            NUMBER(4),
+ CHGPERHR                                          NUMBER(2),
+ SUBCODE                                           NUMBER(3),
+ SECTION					   NUMBER(2),
+	CONSTRAINT TUTOR_TR_ID_PK PRIMARY KEY (TR_ID),
+        CONSTRAINT TUTOR_SUBCODE_SECTION_CK FOREIGN KEY (SUBCODE, SECTION) REFERENCES SUBJECT (SUBCODE, SECTION));
+
+CREATE TABLE STUDENT
+ (STD_ID                                            NUMBER(4),
+ STD_FN                                             VARCHAR2(15),
+ STD_LN                                             VARCHAR2(15),
+ ADDR                                               VARCHAR2(30),
+ GENDER                                             VARCHAR2(1),
+ DOB                                                DATE,
+ TR_ID                                              NUMBER(3),
+	CONSTRAINT STUDENT_STD_ID_PK PRIMARY KEY (STD_ID),
+	CONSTRAINT STUDENT_TR_ID_FK FOREIGN KEY(TR_ID)
+		REFERENCES TUTOR);
+
+CREATE TABLE FEES
+ (STD_ID                                            NUMBER(4),
+ STD_PN                                             NUMBER(10),
+ FEEPERMTH                                          NUMBER(4),
+ DUE                                                DATE,
+	CONSTRAINT FEES_STD_ID_PK PRIMARY KEY (STD_ID));
