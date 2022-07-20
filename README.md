@@ -1,8 +1,9 @@
 # dbp
 INFO 2103  DATABASE PROGRAMMING (SECTION 3)
-JANUARY 2021
-GROUP PROJECT  :  TUITION SYSTEM     
-LECTURER'S NAME: Dr. Zainatul Shima binti Abdullah  
-PREPARED BY    :  		Nur Syifa' Aina bt Zahaimi                 1817794 		
-                      Nurul Fadhillah bt Ismail                  1811722 		
-                      Nor Nabilah Shuhada bt Mohd Kamal          1817510
+\nJANUARY 2021
+\nGROUP PROJECT  :  TUITION SYSTEM     
+\nLECTURER'S NAME: Dr. Zainatul Shima binti Abdullah  
+\nPREPARED BY    :  		Nur Syifa' Aina bt Zahaimi                 1817794 		
+\n                      Nurul Fadhillah bt Ismail                  1811722 		
+\n                      Nor Nabilah Shuhada bt Mohd Kamal          1817510
+\n
